@@ -41,7 +41,7 @@ class A51jobSpider(scrapy.Spider):
     def python_job(self,response):
         items=JobItem()
         print(11)
-        if response.url!='http://51rz.51job.com/sc/show_job_detail.php?jobid=99141355':
+        if response.url!='http://51rz.51job.com/sc/show_job_detail.php?jobid=86521374':
             url=response.url
             position=response.css(".cn > h1:nth-child(1)::attr(title)").extract()#职位
             salary=response.css(".cn > strong:nth-child(3)::text").extract()#薪水
